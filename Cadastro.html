@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SOLUTIONS IT">
+    <meta name="author"content ="Jadiel,Yanne,Thamires,Thalles">
+    <meta name="keywords"content ="Missão,visão e valores">
+    <meta http-equiv="refresh" content="100">
+    <link rel="stylesheet" type="text/css" href="./css/FormCadastro.css" media="screen">
+    <script type="text/javascript" src="js/scritp.js"></script>
+
+    <title>Formulario de Cadastro</title>
+
+</head>
+<body>
+   <header>
+        <div id="navigation" class="navigation">
+             <nav>
+                 <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Empresa.html">Empresa</a></li>
+                    <li><a href="#servico">Serviço</a></li>
+                    <li><a href="#headline">Cliente</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                     <li id="threeline-icon" class="threeline-icon" onclick="openNav()"> &#9776;</li>
+                 </ul>
+              <nav>
+          </div>
+    </header>
+    <main>
+      <div class="box">
+        <form>
+            <fieldset>
+                <legend><b>Formulario de Cadastro</b></legend>
+                <br><br>
+                  <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser"  required >
+                    <label for="nome" class="labelinput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required >
+                    <label for="email" class="labelinput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser"  required >
+                    <label for="telefone" class="labelinput">Telefone</label>
+                    <br><br>
+                    <p>Genero</p>
+                    <input type="radio" id="genero" name="genero" value="feminino"  required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="masculino" name="genero" value="masculino" >
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="outro" name="genero" value="outro" >
+                    <label for="outro">Outro</label>
+                    <br><br>
+                        <label for="data_nascimento"> <b>Data de Nascimento</b></label> required
+                        <input type="date" name="data_nascimento" id="data_nascimento" >
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser"  required>
+                        <label for="cidade" class="labelinput">Cidade</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="estado" class="inputUser"  required >
+                        <label for="estado" class="labelinput">Estado</label>
+                    </div>
+                    <br><br>
+                    <!-- <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser">
+                        <label for="enderco" class="labelinput">Endereço</label>
+                    </div>
+                    <br><br> -->
+                    <button type="submit" id="submit"> Enviar</button>
+                    <br><br>
+              </div>
+        </fieldset>
+      </form>
+       </div>
+    </main>
+</body>
+<script src="js/scriptCadastro.js"defer></script>
+</html>
