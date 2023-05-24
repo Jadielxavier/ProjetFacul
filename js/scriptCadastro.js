@@ -13,7 +13,7 @@ fetch('https://api.sheetmonkey.io/form/7hDZSXSnXkert7F1PajuVW',{
             'Accept': 'aplication/json',
             'Content-type': 'application/json',
          },
-        body: JSON.stringify({ "nome":nome,"email":email,"telefone":telefone,"genero":genero,"data":data,"cidade":cidade}),
+        body: JSON.stringify({ "nome":nome,"email":email,"telefone":telefone,"genero":genero,"data_nascimento":data,"cidade":cidade}),
     }).then(data =>
         {
         alert("Dados enviados com sucesso")
