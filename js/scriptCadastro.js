@@ -6,7 +6,7 @@ const telefone = document.querySelector('#telefone').value;
 const genero = document.querySelector('input[name="genero"]:checked').value;
 const data = document.querySelector('#data_nascimento').value;
 const cidade = document.querySelector('#cidade').value;
-const estado = document.querySelector('estado').value;
+const estado = document.querySelector('#Estado').value;
 // const endereco = document.querySelector('#endereco').value;
 fetch('https://api.sheetmonkey.io/form/7hDZSXSnXkert7F1PajuVW',{
         method: 'post',
@@ -14,7 +14,7 @@ fetch('https://api.sheetmonkey.io/form/7hDZSXSnXkert7F1PajuVW',{
             'Accept': 'aplication/json',
             'Content-type': 'application/json',
          },
-        body: JSON.stringify({ "nome":nome,"email":email,"telefone":telefone,"genero":genero,"data_nascimento":data,"cidade":cidade,"estado":estado}),
+        body: JSON.stringify({ "nome":nome,"email":email,"telefone":telefone,"genero":genero,"data_nascimento":data,"cidade":cidade,"Estado":estado}),
     }).then(data =>
         {
         alert("Dados enviados com sucesso")
